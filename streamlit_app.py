@@ -4,10 +4,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import requests
 import io
-from dotenv import load_dotenv
-import os
-load_dotenv()
-api_key = os.getenv("API_KEY")
 
 # Streamlit app configuration
 st.set_page_config(page_title="Data Visualizer and Cleaner with AI Dashboard", layout="wide")
@@ -139,7 +135,7 @@ if uploaded_file is not None:
         st.title("🤖 AI-Created Dashboard")
 
         # Generate plots using Gemini API
-       
+        api_key = "AIzaSyCmISOvZIApzENPfnvQFdcVw9pu0uF0peE"
         endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={api_key}"
         
         # Generate df.info() output as a string

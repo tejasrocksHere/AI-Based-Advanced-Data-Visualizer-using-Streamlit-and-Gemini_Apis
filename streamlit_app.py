@@ -135,7 +135,7 @@ if uploaded_file is not None:
         st.title("🤖 AI-Created Dashboard")
 
         # Generate plots using Gemini API
-        api_key = "AIzaSyCmISOvZIApzENPfnvQFdcVw9pu0uF0peE"
+       
         endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={api_key}"
         
         # Generate df.info() output as a string

@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import requests
 import io
+from dotenv import load_dotenv
+import os
+load_dotenv()
+api_key = os.getenv("API_KEY")
 
 # Streamlit app configuration
 st.set_page_config(page_title="Data Visualizer and Cleaner with AI Dashboard", layout="wide")
